@@ -39,6 +39,14 @@ p {
 .logo {
   font-family: "BoldFont";
 }
+.nav li {
+  position: relative;
+}
+
+.navbar-nav .nav-link.active,
+.navbar-nav .show > .nav-link {
+  color: rgb(220, 53, 69);
+}
 
 /* Header */
 header {
