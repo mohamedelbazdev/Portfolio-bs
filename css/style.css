@@ -35,6 +35,15 @@ p {
   color: #999;
 }
 
+.btn {
+  outline: 0 !important;
+  border: 0 !important;
+}
+.btn:focus {
+  outline: 0 !important;
+  border: 0 !important;
+}
+
 /* NavBar */
 .logo {
   font-family: "BoldFont";
