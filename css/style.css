@@ -239,3 +239,33 @@ header {
   background-color: gold;
   width: 50%;
 }
+
+/* Contact  */
+.contact {
+  background: url(../images/bg2.jpg) no-repeat;
+  background-size: cover;
+  padding: 100px 0;
+}
+
+.contact .title h2::after {
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translate(-50%);
+  content: "";
+  height: 5px;
+  background-color: gold;
+  width: 30%;
+  text-align: center;
+}
+
+.contact input {
+  height: 55px;
+  padding: 15px;
+  border-radius: 4px;
+}
+.contact textarea {
+  height: 100px;
+  padding: 15px;
+  border-radius: 4px;
+}

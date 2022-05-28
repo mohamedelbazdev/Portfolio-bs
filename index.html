@@ -10,14 +10,14 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
     />
     <link rel="stylesheet" href="./css/bootstrap.min.css" />
-    <link rel="stylesheet" href="./css/style.css" />
     <script src="./js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
     <!-- Container -->
     <div class="container">
       <!--Start Navbar -->
-      <nav class="navbar navbar-expand-lg sticky-top">
+      <nav class="navbar navbar-expand-lg fixed-top bg-white shadow">
         <div class="container-fluid">
           <a class="navbar-brand logo fs-2" href="#"
             ><strong class="text-danger">M-</strong>ELBAZ<strong
@@ -42,19 +42,19 @@
                 <a class="nav-link active" aria-current="page" href="#">Home</a>
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link" href="#">About</a>
+                <a class="nav-link" href="#about">About</a>
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link" href="#">Skills</a>
+                <a class="nav-link" href="#skills">Skills</a>
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link" href="#">Services</a>
+                <a class="nav-link" href="#services">Services</a>
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link" href="#">Projects</a>
+                <a class="nav-link" href="#projects">Projects</a>
               </li>
               <li class="nav-item me-4">
-                <a class="nav-link" href="#">Contact</a>
+                <a class="nav-link" href="#contact">Contact</a>
               </li>
             </ul>
           </div>
@@ -82,7 +82,7 @@
     <!-- End header -->
 
     <!-- Start About -->
-    <section class="about py-5">
+    <section id="about" class="about py-5">
       <div class="container">
         <div class="row">
           <div class="col-12 col-md-6 text-center text-md-start">
@@ -165,7 +165,7 @@
     <!-- End clients -->
 
     <!-- Start Skills -->
-    <section class="skills py-5">
+    <section id="skills" class="skills py-5">
       <div class="container">
         <div class="skills-progress">
           <div class="container">
@@ -199,7 +199,7 @@
 
     <!--Start Services -->
 
-    <section class="Services box3 my-5">
+    <section id="services" class="Services box3 my-5">
       <div class="container">
         <div class="Services-content text-center">
           <span class="text-secondary fs-5 mb-3">I am grat at</span>
@@ -401,7 +401,7 @@
 
     <!-- Start Projects -->
 
-    <section class="projects box3 my-5">
+    <section id="projects" class="projects box3 my-5">
       <div class="container">
         <div class="projects-content text-center">
           <span class="text-secondary fs-5 mb-3">Accomplishments</span>
@@ -486,29 +486,81 @@
     <!-- End Projects -->
 
     <!-- Start Contact Form -->
-    <section>
+    <section id="contact" class="contact text-center mt-5">
       <div class="container">
-        <div class="row">
-          <h3>Contact Us</h3>
-          <div class="social-media">
-            <div class="icons my-2">
-              <a class="text-danger" href="#"
-                ><i class="fa fa-facebook mx-2"></i
-              ></a>
-              <a class="text-danger" href="#"
-                ><i class="fa fa-twitter mx-2"></i
-              ></a>
-              <a class="text-danger" href="#"
-                ><i class="fa fa-instagram mx-2"></i
-              ></a>
-              <a class="text-danger" href="#"
-                ><i class="fa fa-snapchat-ghost mx-2"></i
-              ></a>
+        <div class="row my-5">
+          <div class="col-12 col-md-6">
+            <div class="title mb-5">
+              <h2 class="text-white display-2 position-relative">Contact Us</h2>
+            </div>
+            <div class="social-media">
+              <div class="icons my-2">
+                <a class="text-white fs-2" href="#"
+                  ><i class="fa fa-facebook mx-2"></i
+                ></a>
+                <a class="text-white fs-2" href="#"
+                  ><i class="fa fa-twitter mx-2"></i
+                ></a>
+                <a class="text-white fs-2" href="#"
+                  ><i class="fa fa-instagram mx-2"></i
+                ></a>
+                <a class="text-white fs-2" href="#"
+                  ><i class="fa fa-snapchat-ghost mx-2"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6">
+            <div class="">
+              <form>
+                <div class="form-item px-2 mb-2">
+                  <input
+                    class="w-75"
+                    type="text"
+                    name="sender"
+                    required
+                    placeholder="Your Name"
+                  />
+                </div>
+                <div class="form-item px-2 mb-2">
+                  <input
+                    class="w-75"
+                    type="email"
+                    name="email"
+                    required
+                    placeholder="Enter Email"
+                  />
+                </div>
+                <div class="form-item px-2 mb-2">
+                  <textarea
+                    class="w-75"
+                    name="message"
+                    required
+                    placeholder="Your Message"
+                  ></textarea>
+                </div>
+                <button class="btn btn-danger w-50">Send</button>
+              </form>
             </div>
           </div>
         </div>
       </div>
     </section>
     <!-- End Contact Form -->
+
+    <!--Start Footer -->
+    <footer class="text-white text-center pb-3 py-4 bg-black">
+      <p>
+        © Copyright |
+        <a class="navbar-brand logo" href="#"
+          ><strong class="text-danger">M-</strong>ELBAZ<strong
+            class="text-danger"
+            >..</strong
+          ></a
+        >
+      </p>
+    </footer>
+    <!--End Footer -->
   </body>
 </html>
